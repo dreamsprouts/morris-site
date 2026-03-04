@@ -1,0 +1,27 @@
+{
+  "meta": { "locale": "zh", "updatedAt": "2026-03-04" },
+  "title": "文章",
+  "posts": [
+    {
+      "slug": "myths",
+      "title": "為什麼我們該推動全面人本——迷思與脈絡",
+      "excerpt": "從農業革命到義務教育，多數人被規訓成生產機器；AI 出現後，這種模式下的勞動確實將被取代。但同一時間，AI 也才能真正把人從生產要素中解放。",
+      "publishedAt": "2026-03-04",
+      "featured": true
+    },
+    {
+      "slug": "agent-economy",
+      "title": "從勞動經濟學到 Agent Economy",
+      "excerpt": "當人類從生產函數中的要素抽離，input、function、output 的金字塔將如何重新被定義？",
+      "publishedAt": "2026-03-04",
+      "featured": false
+    },
+    {
+      "slug": "designing-your-life",
+      "title": "Designing Your Life 與找回人生自主權",
+      "excerpt": "在職場上仍在探索、找不到自我定位的人，如何透過方法論與 AI 時代的能力，走出專屬自己的一條路。",
+      "publishedAt": "2026-03-04",
+      "featured": false
+    }
+  ]
+}

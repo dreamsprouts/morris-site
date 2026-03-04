@@ -1,0 +1,28 @@
+{
+  "meta": { "locale": "zh", "updatedAt": "2026-03-04" },
+  "title": "專案",
+  "lead": "這裡收錄已實踐、執行中與即將展開的專案。每個專案都可以點進去，看更多背景、做法與我為什麼做。對應全面人本：需求端（職場變革）與供給端（人才蛻變）我都會用具體專案去推進。",
+  "projects": [
+    {
+      "id": "ilearnd",
+      "title": "iLearnd 我學島",
+      "summary": "地理教育桌遊專案，2015 台大鑽石種子基金 50 萬獲選。",
+      "status": "done",
+      "year": "2015"
+    },
+    {
+      "id": "connex",
+      "title": "Connex",
+      "summary": "槓桿 SHOPLINE 推進商業與人才需求端變革的專案。",
+      "status": "in-progress",
+      "year": "2025"
+    },
+    {
+      "id": "soul-master",
+      "title": "Soul Master 指導靈",
+      "summary": "推進人才供給端變革的專案。",
+      "status": "planned",
+      "year": null
+    }
+  ]
+}

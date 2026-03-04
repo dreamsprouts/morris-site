@@ -1,0 +1,28 @@
+{
+  "meta": { "locale": "zh", "updatedAt": "2026-03-04" },
+  "title": "專案",
+  "lead": "已實踐、執行中與即將展開的專案。",
+  "projects": [
+    {
+      "id": "ilearnd",
+      "title": "iLearnd 我學島",
+      "summary": "地理教育桌遊專案，2015 台大鑽石種子基金 50 萬獲選。",
+      "status": "done",
+      "year": "2015"
+    },
+    {
+      "id": "connex",
+      "title": "Connex",
+      "summary": "槓桿 SHOPLINE 推進商業與人才需求端變革的專案。",
+      "status": "in-progress",
+      "year": "2025"
+    },
+    {
+      "id": "soul-master",
+      "title": "Soul Master 指導靈",
+      "summary": "推進人才供給端變革的專案。",
+      "status": "planned",
+      "year": null
+    }
+  ]
+}

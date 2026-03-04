@@ -1,0 +1,13 @@
+{
+  "meta": { "locale": "zh", "updatedAt": "2026-03-04" },
+  "title": "聯絡",
+  "lead": "歡迎聊聊——coffee chat、合作想法或任何你想說的話。",
+  "links": [
+    { "label": "0911152349", "href": "tel:0911152349", "type": "other" },
+    { "label": "morris.dreamsprouts@gmail.com", "href": "mailto:morris.dreamsprouts@gmail.com", "type": "email" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/morris-dreamsprouts/", "type": "social" },
+    { "label": "Facebook", "href": "https://www.facebook.com/Morris.dreamsprouts", "type": "social" }
+  ],
+  "formTitle": "寫封信給我",
+  "formDescription": "若你偏好表單，可在此留下訊息，我會盡快回覆。"
+}
