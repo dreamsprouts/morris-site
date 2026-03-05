@@ -9,29 +9,21 @@ export function AboutPage() {
   if (!data) return null
 
   return (
-    <article className="py-12 sm:py-16 pb-20">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 readable">
-        <header className="mb-12">
-          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-sumi leading-tight">
-            {data.title}
-          </h1>
+    <article className="page-article">
+      <div className="page-container readable">
+        <header className="page-header">
+          <h1 className="page-title">{data.title}</h1>
           {data.lead && (
-            <p className="mt-4 text-lg text-sumi/80 leading-relaxed">
-              {data.lead}
-            </p>
+            <p className="page-lead whitespace-pre-line">{data.lead}</p>
           )}
         </header>
-        <div className="space-y-10 prose-breath">
+        <div className="section-gap prose-breath">
           {data.sections.map((section, i) => (
             <section key={i}>
               {section.heading && (
-                <h2 className="font-serif text-xl font-semibold text-aisumicha mb-3">
-                  {section.heading}
-                </h2>
+                <h2 className="section-title">{section.heading}</h2>
               )}
-              <p className="text-sumi/90 leading-relaxed whitespace-pre-line">
-                {section.body}
-              </p>
+              <p className="body-text whitespace-pre-line">{section.body}</p>
             </section>
           ))}
         </div>

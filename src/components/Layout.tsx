@@ -13,7 +13,7 @@ export function Layout() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-kinari">
       <header className="border-b border-rikyucha/20 bg-kinari/95 backdrop-blur supports-[backdrop-filter]:bg-kinari/80 sticky top-0 z-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 flex items-center justify-between h-14 sm:h-16">
           <Link
@@ -43,10 +43,10 @@ export function Layout() {
           </nav>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 bg-kinari">
         <Outlet />
       </main>
-      <footer className="border-t border-rikyucha/20 py-6 mt-auto">
+      <footer className="border-t border-rikyucha/20 py-6 mt-auto bg-kinari">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center text-sm text-sumi/60">
           <p>© {new Date().getFullYear()} Morris. 全面人本。</p>
         </div>

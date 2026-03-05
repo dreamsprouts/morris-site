@@ -22,19 +22,15 @@ export function ProjectsPage() {
   if (!data) return null
 
   return (
-    <article className="py-12 sm:py-16 pb-20">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <header className="mb-12 readable">
-          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-sumi leading-tight">
-            {data.title ?? '專案'}
-          </h1>
+    <article className="page-article">
+      <div className="page-container">
+        <header className="page-header readable">
+          <h1 className="page-title">{data.title ?? '專案'}</h1>
           {data.lead && (
-            <p className="mt-4 text-lg text-sumi/80 leading-relaxed">
-              {data.lead}
-            </p>
+            <p className="page-lead">{data.lead}</p>
           )}
         </header>
-        <ul className="space-y-6 sm:space-y-8">
+        <ul className="section-gap">
           {data.projects.map((project) => (
             <li key={project.id}>
               <Link
@@ -54,7 +50,7 @@ export function ProjectsPage() {
                     <span className="text-sm text-sumi/60">{project.year}</span>
                   )}
                 </div>
-                <p className="text-sumi/85 leading-relaxed">{project.summary}</p>
+                <p className="body-text text-sumi/85">{project.summary}</p>
                 <span className="mt-3 inline-flex text-sm text-aisumicha group-hover:underline">
                   閱讀更多 →
                 </span>

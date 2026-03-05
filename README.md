@@ -28,6 +28,6 @@ Build：`npm run build`（output：`dist`）。
 - **內容 schema**：[content-schema.md](content-schema.md)（型別、長度、多語、迭代）
 - **內容輸入**：[content-brief.md](content-brief.md)（條列填寫 → 產初版 → 迭代完稿）
 
-**部署**：GitHub [dreamsprouts/morris-site](https://github.com/dreamsprouts/morris-site)；Cloudflare Pages → https://morris-site.pages.dev（自訂網域 morris.futurin.tw 於 Dashboard 綁定）。詳見 [docs/DEPLOY.md](docs/DEPLOY.md)。
+**部署**：地端 `git push` → GitHub [dreamsprouts/morris-site](https://github.com/dreamsprouts/morris-site) → 自動部署至 Cloudflare Pages（https://morris-site.pages.dev）。一次性在 GitHub 設定 `CLOUDFLARE_API_TOKEN` 即可。詳見 [docs/DEPLOY.md](docs/DEPLOY.md)。
 
 **Agent 接手**：見 handoff `~/.cursor/projects/Users-morrisli/agent-workspace/methodology/morris-site-handoff.md`（當前狀態與 Phase 2 起手清單）。

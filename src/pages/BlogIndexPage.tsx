@@ -12,14 +12,12 @@ export function BlogIndexPage() {
   if (!data) return null
 
   return (
-    <article className="py-12 sm:py-16 pb-20">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6">
-        <header className="mb-12">
-          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-sumi leading-tight">
-            {data.title}
-          </h1>
+    <article className="page-article">
+      <div className="page-container">
+        <header className="page-header">
+          <h1 className="page-title">{data.title}</h1>
         </header>
-        <ul className="space-y-8">
+        <ul className="section-gap">
           {data.posts.map((post) => (
             <li key={post.slug}>
               <Link
@@ -29,7 +27,7 @@ export function BlogIndexPage() {
                 <h2 className="font-serif text-xl font-semibold text-sumi group-hover:text-aisumicha transition-colors">
                   {post.title}
                 </h2>
-                <p className="mt-2 text-sumi/75 text-sm line-clamp-2">
+                <p className="mt-2 body-text text-sumi/75 text-sm line-clamp-2">
                   {post.excerpt}
                 </p>
                 <time

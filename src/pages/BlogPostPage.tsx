@@ -25,18 +25,16 @@ export function BlogPostPage() {
   }
 
   return (
-    <article className="py-12 sm:py-16 pb-20">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 readable">
+    <article className="page-article">
+      <div className="page-container readable">
         <Link
           to="/blog"
           className="text-sm text-aisumicha hover:underline mb-6 inline-block"
         >
           ← 文章列表
         </Link>
-        <header className="mb-10">
-          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-sumi leading-tight">
-            {data.title}
-          </h1>
+        <header className="page-header">
+          <h1 className="page-title">{data.title}</h1>
           <time
             dateTime={data.publishedAt}
             className="mt-3 block text-sm text-sumi/60"
@@ -44,7 +42,7 @@ export function BlogPostPage() {
             {format(new Date(data.publishedAt), 'yyyy年M月d日', { locale: zhTW })}
           </time>
         </header>
-        <div className="prose-breath text-sumi/90 leading-relaxed whitespace-pre-line">
+        <div className="prose-breath body-text whitespace-pre-line">
           {data.body}
         </div>
       </div>

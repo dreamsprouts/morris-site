@@ -10,39 +10,41 @@ export function HomePage() {
   if (!data) return null
 
   return (
-    <article className="pb-20">
-      {data.cuts.map((cut) => {
-        const isFirst = cut.id === 'hook'
-        return (
-          <section
-            key={cut.id}
+    <article className="pb-20 bg-kinari">
+      {/* 單一固定寬度容器：所有 cut 同寬、左右 margin 一致、切齊 */}
+      <div className="mx-auto w-full max-w-2xl px-4 sm:px-6 bg-kinari">
+        {data.cuts.map((cut) => {
+          const isFirst = cut.id === 'hook'
+          return (
+            <section
+              key={cut.id}
             className={
               isFirst
-                ? 'min-h-[70vh] flex flex-col justify-center border-b border-rikyucha/15 bg-gradient-to-b from-aisumicha/5 to-transparent'
+                ? 'min-h-[70vh] flex flex-col justify-center border-b border-rikyucha/15'
                 : 'border-b border-rikyucha/15'
             }
-            style={{
-              paddingTop: isFirst ? 'clamp(4rem, 12vw, 8rem)' : 'clamp(3rem, 10vw, 6rem)',
-              paddingBottom: isFirst ? 'clamp(4rem, 12vw, 8rem)' : 'clamp(3rem, 10vw, 6rem)',
-            }}
-          >
-            <div className="mx-auto max-w-2xl px-4 sm:px-6 readable">
-              <h2
+              style={{
+                paddingTop: isFirst ? 'clamp(4rem, 12vw, 8rem)' : 'clamp(3rem, 10vw, 6rem)',
+                paddingBottom: isFirst ? 'clamp(4rem, 12vw, 8rem)' : 'clamp(3rem, 10vw, 6rem)',
+              }}
+            >
+              <div className="readable text-left">
+                <h2
                 className={
                   isFirst
-                    ? 'font-serif text-3xl sm:text-4xl md:text-[2.75rem] font-semibold text-sumi leading-[1.25] tracking-tight'
-                    : 'font-serif text-2xl sm:text-3xl font-semibold text-sumi leading-tight'
+                    ? 'font-serif text-3xl sm:text-4xl md:text-[2.75rem] font-semibold text-sumi leading-[1.25] tracking-tight whitespace-pre-line'
+                    : 'font-serif text-2xl sm:text-3xl font-semibold text-sumi leading-tight whitespace-pre-line'
                 }
               >
                 {cut.headline}
               </h2>
               {cut.subline && (
-                <p className="mt-5 sm:mt-6 text-sumi/80 leading-relaxed text-lg sm:text-xl max-w-xl">
+                <p className="mt-5 sm:mt-6 text-sumi/80 leading-relaxed text-lg sm:text-xl max-w-xl whitespace-pre-line">
                   {cut.subline}
                 </p>
               )}
               {cut.body && (
-                <p className="mt-5 text-sumi/85 leading-[1.75] prose-breath">
+                <p className="mt-5 text-sumi/85 leading-[1.75] prose-breath whitespace-pre-line">
                   {cut.body}
                 </p>
               )}
@@ -51,10 +53,11 @@ export function HomePage() {
                   <CtaButton to={cut.ctaHref} label={cut.ctaLabel} />
                 </div>
               )}
-            </div>
-          </section>
-        )
-      })}
+              </div>
+            </section>
+          )
+        })}
+      </div>
     </article>
   )
 }

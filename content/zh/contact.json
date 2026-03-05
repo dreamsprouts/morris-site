@@ -1,7 +1,7 @@
 {
   "meta": { "locale": "zh", "updatedAt": "2026-03-04" },
   "title": "聯絡",
-  "lead": "歡迎聊聊——coffee chat、合作想法或任何你想說的話。無論是職涯重定位、AI 導入、全面人本的實踐，或是單純想認識一下，都可以透過下面管道或表單與我聯絡。我會盡量在幾天內回覆。",
+  "lead": "歡迎聊聊——\ncoffee chat、合作想法或任何你想說的話。\n無論是職涯重定位、AI 導入、全面人本的實踐，\n或是單純想認識一下，\n都可以透過下面管道或表單與我聯絡。\n我會盡量在幾天內回覆。",
   "links": [
     { "label": "0911152349", "href": "tel:0911152349", "type": "other" },
     { "label": "morris.dreamsprouts@gmail.com", "href": "mailto:morris.dreamsprouts@gmail.com", "type": "email" },

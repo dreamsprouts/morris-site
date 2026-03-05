@@ -9,21 +9,17 @@ export function ContactPage() {
   if (!data) return null
 
   return (
-    <article className="py-12 sm:py-16 pb-20">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 readable">
-        <header className="mb-12">
-          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-sumi leading-tight">
-            {data.title}
-          </h1>
+    <article className="page-article">
+      <div className="page-container readable">
+        <header className="page-header">
+          <h1 className="page-title">{data.title}</h1>
           {data.lead && (
-            <p className="mt-4 text-lg text-sumi/80 leading-relaxed">
-              {data.lead}
-            </p>
+            <p className="page-lead">{data.lead}</p>
           )}
         </header>
 
-        <section className="mb-12">
-          <h2 className="font-serif text-lg font-semibold text-aisumicha mb-4">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="section-title">
             聯絡管道
           </h2>
           <ul className="space-y-3">
@@ -43,14 +39,14 @@ export function ContactPage() {
         </section>
 
         {(data.formTitle || data.formDescription) && (
-          <section>
+          <section className="pt-12 sm:pt-16">
             {data.formTitle && (
-              <h2 className="font-serif text-lg font-semibold text-aisumicha mb-2">
+              <h2 className="section-title">
                 {data.formTitle}
               </h2>
             )}
             {data.formDescription && (
-              <p className="text-sumi/75 text-sm mb-4">{data.formDescription}</p>
+              <p className="body-text text-sumi/75 text-sm mb-4">{data.formDescription}</p>
             )}
             <form
               action={
