@@ -48,6 +48,16 @@ export function ProjectDetailPage() {
           </div>
           <h1 className="page-title">{data.title}</h1>
           <p className="page-lead mt-3">{data.summary}</p>
+          {data.href && (
+            <a
+              href={data.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-1.5 text-aisumicha hover:underline font-medium"
+            >
+              前往產品 →
+            </a>
+          )}
         </header>
         <div className="prose-breath body-text whitespace-pre-line">
           {data.body}

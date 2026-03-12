@@ -20,9 +20,10 @@
     {
       "id": "soul-master",
       "title": "Soul Master 指導靈",
-      "summary": "推進人才供給端變革的專案。",
-      "status": "planned",
-      "year": null
+      "summary": "幫助人們找回自我、享受心流人生。AI-Native 自我探索產品，開發中，Web 入口已上線。",
+      "status": "in-progress",
+      "year": "2025",
+      "href": "https://soul.futurin.tw/"
     }
   ]
 }
